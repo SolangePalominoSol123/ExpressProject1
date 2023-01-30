@@ -38,11 +38,11 @@ bower_components
 build/Release
 
 # Dependency directories
-node_modules/
-jspm_packages/
+red-bicicletas/node_modules/
+red-bicicletas/jspm_packages/
 
 # TypeScript v1 declaration files
-typings/
+red-bicicletas/typings/
 
 # TypeScript cache
 *.tsbuildinfo
