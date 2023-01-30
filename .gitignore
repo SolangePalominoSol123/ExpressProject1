@@ -38,6 +38,7 @@ bower_components
 build/Release
 
 # Dependency directories
+node_modules/
 red-bicicletas/node_modules/
 red-bicicletas/jspm_packages/
 
