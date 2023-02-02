@@ -41,9 +41,12 @@ build/Release
 node_modules/
 red-bicicletas/node_modules/
 red-bicicletas/jspm_packages/
+red-tiendas-retail/node_modules/
+red-tiendas-retail/jspm_packages/
 
 # TypeScript v1 declaration files
 red-bicicletas/typings/
+red-tiendas-retail/typings/
 
 # TypeScript cache
 *.tsbuildinfo
