@@ -1,0 +1,30 @@
+extends ../layout 
+
+block content
+
+    a(href='/productos/crear') Nuevo Producto 
+
+    table.table 
+        thead
+            tr
+                th(scope='col') #
+                th(scope='col') Nombre
+                th(scope='col') Precio
+                th(scope='col') IdTienda 
+                th(scope='col') Cantidad
+                th(scope='col') 
+                th(scope='col') 
+        tbody
+            each prod in products
+                tr
+                    th(scope='row')=prod.id 
+                    td=prod.nombre
+                    td=prod.precio
+                    td=prod.localId 
+                    td=prod.cantidad
+                    td
+                        a(href='/productos/actualizar/'+prod.id) Editar
+                    td
+                        form.inline(action='/productos/eliminar/'+prod.id method='post')
+                            input(type='hidden' name='id' value=prod.id)
+                            button.link-button(type='submit' name='submit_param' value='submit_value' class='btn') Eliminar
